@@ -4,9 +4,20 @@ nginx 虚拟域名配置
 
 安装方法
 -----
+1. 获取源码
 ```bash
 composer require --dev suifengpiao14/nginx-config:dev-master
 ```
+2.修改composer.json 文件，增加执行脚本
+```json
+"post-install-cmd": [
+    "sh ./vendor/suifengpiao14/nginx-config/src/setup.sh"
+],
+"post-update-cmd": [
+    "sh ./vendor/suifengpiao14/nginx-config/src/setup.sh"
+]
+```
+
 
 使用方法
 ---------
