@@ -17,6 +17,10 @@ composer require --dev suifengpiao14/nginx-config:dev-master
     "sh ./vendor/suifengpiao14/nginx-config/src/setup.sh"
 ]
 ```
+3. 执行安装命令
+```bash
+composer install
+```
 
 
 使用方法

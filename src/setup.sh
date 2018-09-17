@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -e ./conf-nginx ];
+if [ -e ./config_nginx.sh ];
 then
     CONF_NGINX_EXISTS=1
 else
