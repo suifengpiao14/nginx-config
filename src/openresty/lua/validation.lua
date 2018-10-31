@@ -75,8 +75,8 @@ function _M.decorateResponse(res)
         return ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR)
     end
 
-    if res.header ~= nil then
-        for k, v in pairs(res.header) do
+    if res.headers ~= nil then
+        for k, v in pairs(res.headers) do
             val = tostring(v)
             ngx.header[k] = val
         end
