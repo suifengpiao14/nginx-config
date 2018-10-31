@@ -10,6 +10,7 @@ function _M.init(host,config)
         ngx.log(ngx.ERR,"validation host can not be empty");
         return ngx.exit(ngx.HTTP_INTERNAL_SERVER_ERROR);
     end
+    local config = config or {};
     _M.host=host;
     _M.scheme= config.scheme or "http";
     _M.http_proxy = config.http_proxy or nil;
